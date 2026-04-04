@@ -1,0 +1,16 @@
+/* Selecciona todo para un control total */
+*, *::before, *::after {
+  box-sizing: border-box; /* Evita que el padding afecte el ancho total */
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%; /* Útil para layouts que ocupan toda la pantalla */
+  width: 100%;
+}
+
+body {
+  line-height: 1.5; /* Mejora la legibilidad base */
+  -webkit-font-smoothing: antialiased; /* Suaviza fuentes en macOS */
+}
