@@ -2,7 +2,7 @@
     font-family: 'Noto Serif';
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     height: 100px;
     padding: 1.2rem;
     border-top: 2px solid #4b0000;
@@ -17,13 +17,14 @@
         h3{
             color: #4b0000;
             font-weight: bold;
-            height: 10px;
+            height: auto;
+            margin: 0 0 0.3rem;
             font-size: 1.3rem;
         }
         span{
             font-weight: lighter;
             font-size: 1rem;
-            color: #4b0000; 
+            color: #4b0000;
         }
     }
     .right-content{
@@ -34,6 +35,55 @@
         font-weight: lighter;
         p{
             color: #4b0000;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+
+        .left-content {
+            align-items: center;
+
+            h3 {
+                font-size: 1.1rem;
+            }
+            span {
+                font-size: 0.8rem;
+            }
+        }
+
+        .right-content {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+        padding: 1rem 1.5rem;
+
+        .left-content h3 {
+            font-size: 1.1rem;
+        }
+        .left-content span {
+            font-size: 0.85rem;
+        }
+        .right-content p {
+            font-size: 0.85rem;
         }
     }
 }

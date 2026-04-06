@@ -1,9 +1,22 @@
 :root{
-  --font-family: 'Noto Serial', sans-serif;
+  --font-family: 'Noto Serif', sans-serif;
+  --color-bg: #fff9e8;
+  --color-dark-red: #4b0000;
+  --color-accent-red: #5c0f0f;
+  --color-blue: #525d86;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-family);
-  line-height: 1.5; /* Mejora la legibilidad base */
-  -webkit-font-smoothing: antialiased; /* Suaviza fuentes en macOS */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

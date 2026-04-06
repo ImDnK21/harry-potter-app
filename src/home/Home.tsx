@@ -55,18 +55,18 @@ export const Home = () => {
                 <section className="curiosities-container">
                     <h2 className="curiosities-tittle">Curiosities & Lore</h2>
                     <div className="curiosities-cards">
-                        <div className="card-one"><span class="material-symbols-outlined">
+                        <div className="card-one"><span className="material-symbols-outlined">
                             wand_shine
                         </span>
                             <h2>The Floo Network</h2>
                             <p>Ensure your fireplace properly conntected to the Floo Authority before attemting any cross-country travel this winter</p>
                         </div>
-                        <div className="card-two"><span class="material-symbols-outlined">
+                        <div className="card-two"><span className="material-symbols-outlined">
                             skull
                         </span>
                             <h2>Boggart Banishing</h2>
                             <p>Remember: the Riddikulus charm requires a clear mental image of truly amusing. Concentration is key.</p></div>
-                        <div className="card-three"><span class="material-symbols-outlined">
+                        <div className="card-three"><span className="material-symbols-outlined">
                             diamond_shine
                         </span>
                             <h2>Potion Brewing</h2>
