@@ -1,3 +1,35 @@
-.main-header{
-    background-color: royalblue;
+
+
+.main-content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff9e8;
+    height: 60px;
+    padding: 3rem;
+    font-family: 'Noto Serif';
 }
+
+.header-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4b0000;
+}
+
+.header-routes{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4b0000;
+    :hover{
+        font-size: 1.3rem;
+    }
+    .active{
+        font-size: 1.3rem;
+        text-decoration: underline;
+    }
+}
+

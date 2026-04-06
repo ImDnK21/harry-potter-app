@@ -1,0 +1,39 @@
+.footer-container{
+    font-family: 'Noto Serif';
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 100px;
+    padding: 1.2rem;
+    border-top: 2px solid #4b0000;
+    background-color: #fff9e8;
+
+    .left-content{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        h3{
+            color: #4b0000;
+            font-weight: bold;
+            height: 10px;
+            font-size: 1.3rem;
+        }
+        span{
+            font-weight: lighter;
+            font-size: 1rem;
+            color: #4b0000; 
+        }
+    }
+    .right-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-weight: lighter;
+        p{
+            color: #4b0000;
+        }
+    }
+}
