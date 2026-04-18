@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -24,10 +25,10 @@ export const Header = () => {
         </IconButton>
         <nav className={`mobile-nav ${menuOpen ? 'open' : ''}`}>
           <div className="header-routes">
-            <span className="active" onClick={() => setMenuOpen(false)}>HOME</span>
-            <span onClick={() => setMenuOpen(false)}>CHARACTERS</span>
-            <span onClick={() => setMenuOpen(false)}>SPELLS</span>
-            <span onClick={() => setMenuOpen(false)}>HOUSES</span>
+            <NavLink end to="/" onClick={() => setMenuOpen(false)}>HOME</NavLink>
+            <NavLink to="/characters" onClick={() => setMenuOpen(false)}>CHARACTERS</NavLink>
+            <NavLink to="/spells" onClick={() => setMenuOpen(false)}>SPELLS</NavLink>
+            <NavLink to="/houses" onClick={() => setMenuOpen(false)}>HOUSES</NavLink>
           </div>
           <div className="header-logon">
             <Button variant="contained">Login</Button>
